@@ -107,13 +107,13 @@ const Header = () => {
               Contact
             </LinkScroll>
           </ul>
-          <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
+          <div className="lg:col-start-10 lg:col-end-12 font-medium flex justify-end items-center">
             <ButtonOutline>
               <a
                 href="tel:80063242642"
-                className="flex justify-center items-center"
+                className="flex justify-center items-center text-xs lg:text-sm"
               >
-                <Call className="h-6 w-6 mr-2 text-white-500" />
+                <Call className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
                 Emergency? Click to call!
               </a>
             </ButtonOutline>
