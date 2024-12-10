@@ -18,11 +18,11 @@ const Header = () => {
     <>
       <header
         className={
-          "fixed top-0 w-full  z-30 bg-[#000000] transition-all " +
+          "fixed top-0 w-full  z-30 bg-[#000] transition-all " +
           (scrollActive ? " shadow-md pt-0" : " pt-0")
         }
       >
-        <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-2 sm:py-4">
+        <nav className="max-w-screen-xl px-6 sm:px-8 bg-[#000] lg:px-16 mx-auto grid grid-flow-col py-2 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
             <Image
               src="/assets/logo-yellow.webp"
