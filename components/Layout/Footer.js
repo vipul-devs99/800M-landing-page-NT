@@ -11,14 +11,16 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
           {/* <LogoVPN className="h-8 w-auto mb-6" /> */}
           <Image
-              src="/assets/logo-yellow.webp"
-              alt="logo"
-              width={80}
-              height={42}
-              className=""
-            />
+            src="/assets/800bLogo.webp"
+            alt="logo"
+            width={120}
+            height={42}
+            className=""
+          />
           <p className="my-4 text-white-500">
-             Your trusted superhero mechanic, providing 24/7 on-site car repair services across Dubai. Fast, reliable, and always ready to save the day!
+            Your trusted superhero mechanic, providing 24/7 on-site car repair
+            services across Dubai. Fast, reliable, and always ready to save the
+            day!
           </p>
           <div className="flex w-full mt-2 mb-8 -mx-2">
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
@@ -31,28 +33,28 @@ const Footer = () => {
               <Instagram className="h-6 w-6" />
             </div>
           </div>
-          <p className="text-gray-400">Copyright ©{new Date().getFullYear()} - 800Mechanic</p>
+          <p className="text-gray-400">
+            Copyright ©{new Date().getFullYear()} - 800Mechanic
+          </p>
         </div>
         <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
-          <p className="text-white-500 mb-4 font-medium text-lg">Product</p>
+          <p className="text-white-500 mb-4 font-medium text-lg">Quick Link</p>
           <ul className="text-black-500 ">
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Download{" "}
+              Home{" "}
             </li>
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Pricing{" "}
+              About{" "}
             </li>
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Locations{" "}
+              Services{" "}
+            </li>
+           
+            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+              Testimonial{" "}
             </li>
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Server{" "}
-            </li>
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Countries{" "}
-            </li>
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Blog{" "}
+              Contact{" "}
             </li>
           </ul>
         </div>
@@ -65,12 +67,8 @@ const Footer = () => {
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
               FAQ{" "}
             </li>
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Tutorials{" "}
-            </li>
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              About Us{" "}
-            </li>
+           
+           
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
               Privacy Policy{" "}
             </li>
@@ -80,13 +78,17 @@ const Footer = () => {
           </ul>
         </div>
         <div className="row-span-2 sm:col-span-2 sm:col-start-11 sm:col-end-13 flex flex-col">
-          <p className="text-white-500 mb-4 font-medium text-lg">Earn Money</p>
+          <p className="text-white-500 mb-4 font-medium text-lg">
+            Contact Info
+          </p>
           <ul className="text-black-500">
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Affiliate{" "}
+              <a href="tel:+971509344668">+971 50 934 4668</a>
             </li>
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Become Partner{" "}
+              <a href="mailto:support@800bbattery.com">
+                support@800bbattery.com
+              </a>
             </li>
           </ul>
         </div>

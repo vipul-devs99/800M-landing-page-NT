@@ -25,9 +25,9 @@ const Header = () => {
         <nav className="max-w-screen-xl px-6 sm:px-8 bg-black-900 lg:px-16 mx-auto grid grid-flow-col py-2 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
             <Image
-              src="/assets/logo-yellow.webp"
+              src="/assets/800bLogo.webp"
               alt="logo"
-              width={80}
+              width={120}
               height={42}
               className=""
             />

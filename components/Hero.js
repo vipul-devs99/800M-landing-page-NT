@@ -4,29 +4,36 @@ import ButtonPrimary from "./misc/ButtonPrimary";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import Call from "../public/assets/Icon/phone.svg";
+import WhatsApp from "../public/assets/Icon/whatsapp.svg";
 
 const features = [
   "No Hidden Fees – Delivery and Service Are Free",
   "Enjoy a 24-Month Warranty on Your New Battery",
   "Free Car Battery Jumpstart and Full Inspection",
-  "Will  Get 15% winter offer for battery replacement"
-]
+  "Will  Get 15% winter offer for battery replacement",
+];
 
 const Hero = ({
   listUser = [
     {
-      name: "Users",
-      number: "390",
+      name: "Up to 18 Months Warranty",
+      number: "Step 1",
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
-      name: "Locations",
-      number: "20",
+      name: "At Your Location in 25 Mins.",
+      number: "Step 2",
       icon: "/assets/Icon/gridicons_location.svg",
     },
     {
-      name: "Server",
-      number: "50",
+      name: "German Brands Batteries",
+      number: "Step 3",
+      icon: "/assets/Icon/bx_bxs-server.svg",
+    },
+    {
+      name: "Pay in 4 Easy Installments",
+      number: "Step 4",
       icon: "/assets/Icon/bx_bxs-server.svg",
     },
   ],
@@ -34,70 +41,102 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto" id="home">
+    <div
+      className="max-w-screen-xl lg:mt-24 mt-10 lg:px-8 px-4 xl:px-16 mx-auto"
+      id="home"
+    >
       <ScrollAnimationWrapper>
         <motion.div
-          className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
+          className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 lg:gap-8 py-6 sm:py-16"
           variants={scrollAnimation}
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
             <h1 className="text-2xl lg:text-3xl xl:text-4xl font-medium text-black-600 leading-normal">
-            Get Your Battery Replaced in 25 Minutes Fast, Reliable Service
-            Anytime, Anywhere.
+              Get Your Battery Replaced in 25 Minutes Fast, Reliable Service
+              Anytime, Anywhere.
             </h1>
             <p className="text-black-500 mt-4 mb-6">
-               ( Get 15% winter offer for battery replacement )
+              ( Get 15% winter offer for battery replacement )
             </p>
             <ul className="text-black-500 self-start list-inside ml-10 mb-4">
-            {features.map((feature, index) => (
-              <motion.li
-                className="relative circle-check custom-list mb-2 mt-2"
-                custom={{duration: 2 + index}}
-                variants={scrollAnimation}
-                key={feature}
-                whileHover={{
-                scale : 1.1,
-                transition: {
-                  duration: .2
-                }
-                }}>
+              {features.map((feature, index) => (
+                <motion.li
+                  className="relative circle-check custom-list mb-2 mt-2"
+                  custom={{ duration: 2 + index }}
+                  variants={scrollAnimation}
+                  key={feature}
+                  whileHover={{
+                    scale: 1.1,
+                    transition: {
+                      duration: 0.2,
+                    },
+                  }}
+                >
                   {feature}
-              </motion.li>
-              )
-            )}
-          </ul>
-            <ButtonPrimary>Get Started</ButtonPrimary>
+                </motion.li>
+              ))}
+            </ul>
+            <div className="flex justify-center items-center gap-2">
+              <ButtonPrimary>
+                <a
+                  href="https://wa.me/+971509344668?text=Can I get more details about your service?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center items-center text-xs lg:text-sm py-1"
+                >
+                  <WhatsApp className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
+                  <span className="">WhatsApp Us!</span>
+                </a>
+              </ButtonPrimary>
+              <button
+                className={
+                  "py-3 lg:py-3 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-black-600 hover:shadow-yellow-md transition-all outline-none "
+                }
+              >
+                <a
+                  href="tel:+971509344668"
+                  className="flex justify-center items-center text-xs lg:text-sm py-1"
+                >
+                  <Call className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
+                  <span className="">Call Now!</span>
+                </a>
+              </button>
+            </div>
           </div>
           <div className="flex w-full">
-            <motion.div className="h-full w-full" variants={scrollAnimation}>
+            <motion.div
+              className="h-full w-full rounded"
+              variants={scrollAnimation}
+            >
               <Image
-                src="/assets/Illustration1.png"
-                alt="VPN Illustrasi"
+                src="/assets/heroBanner.webp"
+                alt="800 Illustrasi"
                 quality={100}
                 width={612}
-                height={383}
+                height={483}
                 layout="responsive"
+                className="rounded-md"
               />
             </motion.div>
           </div>
         </motion.div>
       </ScrollAnimationWrapper>
       <div className="relative w-full flex">
-        <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
+        <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-2 sm:grid-cols-4 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
           {listUser.map((listUsers, index) => (
             <motion.div
-              className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
+              className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-10/12 px-4 sm:w-auto mx-auto sm:mx-0"
               key={index}
               custom={{ duration: 2 + index }}
               variants={scrollAnimation}
             >
-              <div className="flex mx-auto w-40 sm:w-auto">
-                <div className="flex items-center justify-center bg-yellow-100 w-12 h-12 mr-6 rounded-full">
-                  <img src={listUsers.icon} className="h-6 w-6" />
+              <div className="flex lg:flex-row flex-col">
+                <div className="flex items-center justify-center bg-yellow-100 w-12 h-12 mr-2 rounded-full">
+                  <img src={listUsers.icon} className="h-6 w-6 " />
                 </div>
                 <div className="flex flex-col">
                   <p className="text-xl text-black-600 font-bold">
-                    {listUsers.number}+
+                    {listUsers.number}
                   </p>
                   <p className="text-lg text-black-500">{listUsers.name}</p>
                 </div>

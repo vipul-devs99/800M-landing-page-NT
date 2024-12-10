@@ -14,8 +14,8 @@ module.exports = {
       lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
       xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
       t: "0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-      yellow: "0px 20px 20px -15px rgb(255, 235, 62) ",
-      "yellow-md": "0px 20px 40px -15px rgba(255, 235, 62,0.81) ",
+      yellow: "0px 20px 20px -15px rgb(242, 135, 28) ",
+      "yellow-md": "0px 20px 40px -15px rgba(242, 135, 28,0.81) ",
       red: "0px 20px 20px -15px rgb(211, 47, 47) ",
       "yellow-md": "0px 20px 40px -15px rgba(211, 47, 47,0.81) ",
       none: "none",
@@ -32,7 +32,8 @@ module.exports = {
       },
       yellow: {
         100: "#FFECEC",
-        500: "#ffeb3e",
+        300: "#ffbb76",
+        500: "#f2871c",
       },
       green: {
         500: "#2FAB73",
