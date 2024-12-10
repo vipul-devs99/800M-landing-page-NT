@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
 import GoogleReviewsCard from "../components/misc/GoogleReviewsCard";
+import HowItWorks from "../components/Layout/HowItWorks";
 
 export default function Home() {
   return (
@@ -12,8 +13,10 @@ export default function Home() {
       <Layout>
         <Hero />
         <Feature />
+        <HowItWorks />
         <Pricing />
-        {/* <GoogleReviewsCard />  */}
+        <GoogleReviewsCard /> 
+        
       </Layout>
     </>
   );
