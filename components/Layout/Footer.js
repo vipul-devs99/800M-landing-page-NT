@@ -4,9 +4,9 @@ import Instagram from "../../public/assets/Icon/instagram.svg";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <div className="bg-black-900 pt-44 pb-10">
-      <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-6 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-3 sm:grid-cols-12 gap-4">
-        <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
+    <div className="bg-black-900 pt-44 pb-20">
+      <div className="max-w-screen-xl mx-auto w-full px-6 sm:px-8 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className=" ">
           <Image
             src="/assets/800bLogo.webp"
             alt="logo"
@@ -14,7 +14,7 @@ const Footer = () => {
             height={42}
             className=""
           />
-          <p className="my-4 text-white-500">
+          <p className="my-4 text-white-500 lg:w-8/12">
             Your trusted superhero mechanic, providing 24/7 on-site car repair
             services across Dubai. Fast, reliable, and always ready to save the
             day!
@@ -45,12 +45,11 @@ const Footer = () => {
             height={80}
             className=""
           />
-          <p className="text-gray-400 mt-8">
-            Copyright ©{new Date().getFullYear()} - 800Mechanic
-          </p>
+         
         </div>
-        <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
-          <p className="text-white-500 mb-4 font-medium text-lg">Quick Link</p>
+       <div className="grid grid-cols-1 lg:grid-cols-3">
+       <div className=" ">
+          <p className=" mb-4 font-bold text-lg text-yellow-500">Quick Link</p>
           <ul className="text-black-500 ">
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
               Home{" "}
@@ -70,8 +69,8 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">
-          <p className="text-white-500 mb-4 font-medium text-lg">Engage</p>
+        <div className="">
+          <p className=" mb-4 font-bold text-lg text-yellow-500">Engage</p>
           <ul className="text-black-500">
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
               800Mechanic ?{" "}
@@ -88,8 +87,8 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="row-span-2 sm:col-span-2 sm:col-start-11 sm:col-end-13 flex flex-col">
-          <p className="text-white-500 mb-4 font-medium text-lg">
+        <div className="">
+          <p className=" mb-4 font-bold text-lg text-yellow-500">
             Contact Info
           </p>
           <ul className="text-black-500">
@@ -103,6 +102,10 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+       </div>
+       <p className="text-gray-400 mt-4">
+            Copyright ©{new Date().getFullYear()} - 800Mechanic
+          </p>
       </div>
     </div>
   );

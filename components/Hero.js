@@ -14,30 +14,7 @@ const features = [
   "Will  Get 15% winter offer for battery replacement",
 ];
 
-const Hero = ({
-  listUser = [
-    {
-      name: "Up to 18 Months Warranty",
-      number: "Step 1",
-      icon: "/assets/Icon/heroicons_sm-user.svg",
-    },
-    {
-      name: "At Your Location in 25 Mins.",
-      number: "Step 2",
-      icon: "/assets/Icon/gridicons_location.svg",
-    },
-    {
-      name: "German Brands Batteries",
-      number: "Step 3",
-      icon: "/assets/Icon/bx_bxs-server.svg",
-    },
-    {
-      name: "Pay in 4 Easy Installments",
-      number: "Step 4",
-      icon: "/assets/Icon/bx_bxs-server.svg",
-    },
-  ],
-}) => {
+const Hero = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
@@ -47,7 +24,7 @@ const Hero = ({
     >
       <ScrollAnimationWrapper>
         <motion.div
-          className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 lg:gap-8 py-6 sm:py-16"
+          className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 lg:gap-8 py-6 sm:py-0"
           variants={scrollAnimation}
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
@@ -95,7 +72,7 @@ const Hero = ({
               >
                 <a
                   href="tel:+971509344668"
-                  className="flex justify-center items-center text-xs lg:text-sm py-1"
+                  className="flex justify-center items-center text-xs lg:text-sm py-1 "
                 >
                   <Call className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
                   <span className="">Call Now!</span>
