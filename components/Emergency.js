@@ -51,7 +51,7 @@ const Emergency = () => {
             <div>
             <img
                   src="/assets/location.webp"
-                  className="lg:h-44 h-44 w-auto rounded-2xl"
+                  className="lg:h-48 h-44 lg:w-96 w-auto rounded-2xl"
                   alt="Map Location"
                 />
                 </div>

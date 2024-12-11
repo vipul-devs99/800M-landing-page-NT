@@ -107,12 +107,13 @@ const WhyChoose = () => {
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="/assets/Illustration2.png"
-              alt="VPN Illustrasi"
+             src="/assets/key-features_510x420.webp"
+              alt="Services"
               layout="responsive"
               quality={100}
-              height={314}
-              width={508}
+              height={84}
+              width={108}
+              className="h-44"
             />
           </motion.div>
         </ScrollAnimationWrapper>

@@ -10,6 +10,7 @@ import BatterySection from "../components/BatterySection";
 import WhyChoose from "../components/WhyChoose";
 import Feedback from "../components/Feedback";
 import FixedContactButton from "../components/Layout/FixedContactButton";
+import AboutUS from "../components/AboutUS";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <SeoHead title='800Mechanic Landing Page' />
       <Layout>
         <Hero />
+        <AboutUS />
         <Feature />
         <TrustSection />
         <WhyChoose />

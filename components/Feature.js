@@ -25,18 +25,19 @@ const Feature = () => {
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="/assets/Illustration2.png"
-              alt="VPN Illustrasi"
+              src="/assets/key-features_510x420.webp"
+              alt="Service Benefits"
               layout="responsive"
               quality={100}
               height={414}
               width={508}
+              className="rounded"
             />
           </motion.div>
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper>
           <motion.div
-            className="flex flex-col justify-center ml-auto w-full lg:w-9/12"
+            className="flex flex-col lg:mt-10  justify-center ml-auto w-full lg:w-9/12"
             variants={scrollAnimation}
           >
             <h3 className="text-3xl lg:text-4xl text-start font-medium leading-relaxed text-black-600">
