@@ -2,7 +2,7 @@ import React from "react";
 
 const GoogleReviewBadge = () => {
   return (
-    <div className="fixed left-0 top-1/2 transform -translate-y-1/2 bg-white shadow-md rounded-r-lg flex flex-col items-center w-16 z-50 bg-white-500">
+    <div className="fixed left-0 top-1/2 transform -translate-y-1/2 bg-white shadow-md rounded-r-lg flex flex-col items-center w-16 z-50 bg-white-500 border border-yellow-300/50">
       {/* Star Rating */}{/* Google Logo */}
       <div className="flex justify-center items-center mt-3">
         <img
