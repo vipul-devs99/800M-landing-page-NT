@@ -7,7 +7,7 @@ export default function TrustSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Main stat */}
           <div className="text-center md:text-left flex justify-center items-center flex-col">
-            <div className="text-5xl md:text-6xl font-bold text-yellow-500">300,000</div>
+            <div className="text-5xl md:text-6xl font-bold text-yellow-500">10,000</div>
             <div className="text-xl md:text-2xl mt-2 text-yellow-500">HAPPY CUSTOMERS</div>
           </div>
 
@@ -28,7 +28,7 @@ export default function TrustSection() {
                 <Star className="w-6 h-6 text-yellow-500" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-start text-yellow-500">13+</div>
+                <div className="text-2xl font-bold text-start text-yellow-500">7+</div>
                 <div className="text-sm text-white-500">Years of Experience</div>
               </div>
             </div>
@@ -58,7 +58,7 @@ export default function TrustSection() {
                 <Star className="w-6 h-6 text-yellow-500" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-start text-yellow-500">11,500+</div>
+                <div className="text-2xl font-bold text-start text-yellow-500">500+</div>
                 <div className="flex items-center gap-2">
                   <span className="text-sm text-white-500">Google Review</span>
                   <div className="flex items-center">

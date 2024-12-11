@@ -1,10 +1,13 @@
 import Feature from "../components/Feature";
-import Pricing from "../components/Pricing";
+import WhyChooseUs from "../components/WhyChooseUs";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
 import GoogleReviewsCard from "../components/misc/GoogleReviewsCard";
 import HowItWorks from "../components/Layout/HowItWorks";
+import TrustSection from "../components/Layout/TrustSection";
+import Emergency from "../components/Emergency";
+import BatterySection from "../components/BatterySection";
 
 export default function Home() {
   return (
@@ -13,9 +16,12 @@ export default function Home() {
       <Layout>
         <Hero />
         <Feature />
+        <TrustSection />
+        <WhyChooseUs />
         <HowItWorks />
-        <Pricing />
-        <GoogleReviewsCard /> 
+        <BatterySection />
+        <Emergency />
+        {/* <GoogleReviewsCard />  */}
         
       </Layout>
     </>

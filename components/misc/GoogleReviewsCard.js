@@ -19,7 +19,7 @@ const GoogleReviewsCard = () => {
           <span className="text-3xl font-bold text-gray-900">4.9</span>
           <div className="w-px h-6 bg-gray-300 mx-2"></div>
           <div>
-            <p className="text-gray-800 font-medium">11,500 +</p>
+            <p className="text-gray-800 font-medium">500 +</p>
             <div className="flex text-yellow-400">
               {/* Star Icons */}
               <svg
