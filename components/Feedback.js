@@ -1,16 +1,14 @@
 import React, { useMemo } from "react";
-import Image from "next/image";
+
 import Testimoni from "./Testimoni";
-import ButtonPrimary from "./misc/ButtonPrimary";
-import ButtonOutline from "./misc/ButtonOutline.";
-import Maps from "../public/assets/HugeGlobal.svg";
+
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-import TrustSection from "./Layout/TrustSection";
 
 
-const WhyChooseUs = () => {
+
+const Feedback = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
@@ -25,7 +23,7 @@ const WhyChooseUs = () => {
             <motion.h3
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
-              Why Choose Us?{" "}
+              Trusted by Thousands of Happy Customer{" "}
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
@@ -47,4 +45,4 @@ const WhyChooseUs = () => {
   );
 };
 
-export default WhyChooseUs;
+export default Feedback;

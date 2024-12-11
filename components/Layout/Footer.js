@@ -1,15 +1,12 @@
 import React from "react";
-// import LogoVPN from "../../public/assets/logo-yellow.svg";
 import Facebook from "../../public/assets/Icon/facebook.svg";
-import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <div className="bg-black-900 pt-44 pb-24">
+    <div className="bg-black-900 pt-44 pb-10">
       <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-6 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-3 sm:grid-cols-12 gap-4">
         <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
-
           <Image
             src="/assets/800bLogo.webp"
             alt="logo"
@@ -23,23 +20,23 @@ const Footer = () => {
             day!
           </p>
           <div className="flex w-full mt-2 mb-8 -mx-2">
-  <a 
-    href="https://www.facebook.com/profile.php?id=61565118175123" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md"
-  >
-    <Facebook className="h-6 w-6" />
-  </a>
-  <a 
-    href="https://www.instagram.com/800b.battery/" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md"
-  >
-    <Instagram className="h-6 w-6" />
-  </a>
-</div>
+            <a
+              href="https://www.facebook.com/profile.php?id=61565118175123"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md"
+            >
+              <Facebook className="h-6 w-6" />
+            </a>
+            <a
+              href="https://www.instagram.com/800b.battery/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md"
+            >
+              <Instagram className="h-6 w-6" />
+            </a>
+          </div>
 
           <Image
             src="/assets/GmapCode.webp"
@@ -64,7 +61,7 @@ const Footer = () => {
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
               Services{" "}
             </li>
-           
+
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
               Testimonial{" "}
             </li>
@@ -82,8 +79,7 @@ const Footer = () => {
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
               FAQ{" "}
             </li>
-           
-           
+
             <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
               Privacy Policy{" "}
             </li>

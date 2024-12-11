@@ -1,5 +1,4 @@
 import Feature from "../components/Feature";
-import WhyChooseUs from "../components/WhyChooseUs";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
@@ -8,6 +7,8 @@ import HowItWorks from "../components/Layout/HowItWorks";
 import TrustSection from "../components/Layout/TrustSection";
 import Emergency from "../components/Emergency";
 import BatterySection from "../components/BatterySection";
+import WhyChoose from "../components/WhyChoose";
+import Feedback from "../components/Feedback";
 
 export default function Home() {
   return (
@@ -17,7 +18,8 @@ export default function Home() {
         <Hero />
         <Feature />
         <TrustSection />
-        <WhyChooseUs />
+        <WhyChoose />
+        <Feedback />
         <HowItWorks />
         <BatterySection />
         <Emergency />
