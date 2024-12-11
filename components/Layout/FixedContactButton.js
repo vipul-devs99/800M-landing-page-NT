@@ -4,7 +4,7 @@ import WhatsApp from "../../public/assets/Icon/whatsapp.svg";
 
 const FixedContactButton = () => {
   return (
-    <div className="fixed lg:bottom-8 bottom-20 right-4 flex flex-col gap-3">
+    <div className="fixed lg:bottom-8 bottom-20 right-4 flex flex-col gap-3 z-50 ">
       {/* WhatsApp Button */}
       <a
         href="https://wa.me/+971509344668?text=Can I get more details about your service?"
