@@ -14,7 +14,7 @@ const Emergency = () => {
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
           <div className="absolute rounded-xl border-yellow-300 bg-yellow-300  py-8 sm:py-10 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 ">
             <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
-              <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
+              <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-semibold">
                 Stuck? Help Is Just a <br /> Call Away!
               </h5>
               <p className="mt-3">We’ll reach you within 30 minutes.</p>

@@ -19,15 +19,15 @@ const Hero = () => {
 
   return (
     <div
-      className="max-w-screen-xl lg:mt-24 mt-10 lg:px-8 px-4 xl:px-16 mx-auto"
+      className="max-w-screen-xl lg:mt-28 mt-20 lg:px-8 px-4 xl:px-16 mx-auto"
       id="home"
     >
       <ScrollAnimationWrapper>
         <motion.div
-          className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 lg:gap-8 py-6 sm:py-0"
+          className="grid grid-cols-1 lg:grid-cols-2"
           variants={scrollAnimation}
         >
-          <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
+          <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1 mt-6 lg:mt-0">
             <h1 className="text-2xl lg:text-3xl xl:text-4xl font-medium text-black-600 leading-normal">
               Get Your Battery Replaced in 25 Minutes Fast, Reliable Service
               Anytime, Anywhere.

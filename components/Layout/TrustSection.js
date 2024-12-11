@@ -7,7 +7,7 @@ import ButtonPrimary from '../misc/ButtonPrimary';
 
 export default function TrustSection() {
   return (
-    <div className="bg-black-900 text-white px-6 py-12 md:py-16">
+    <div className="bg-black-900 text-white px-6 py-12 md:py-16" id='about'>
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Main stat */}

@@ -13,7 +13,7 @@ const Feedback = () => {
 
   return (
     <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
+      className="bg-gradient-to-b from-white-300 to-white-500 w-full lg:py-14 py-6"
       id="services"
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
@@ -22,7 +22,7 @@ const Feedback = () => {
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
+              className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
               Trusted by Thousands of Happy Customer{" "}
             </motion.h3>
             <motion.p
