@@ -9,6 +9,7 @@ import Emergency from "../components/Emergency";
 import BatterySection from "../components/BatterySection";
 import WhyChoose from "../components/WhyChoose";
 import Feedback from "../components/Feedback";
+import FixedContactButton from "../components/Layout/FixedContactButton";
 
 export default function Home() {
   return (
@@ -23,7 +24,8 @@ export default function Home() {
         <HowItWorks />
         <BatterySection />
         <Emergency />
-        {/* <GoogleReviewsCard />  */}
+        <FixedContactButton />
+        <GoogleReviewsCard /> 
         
       </Layout>
     </>
