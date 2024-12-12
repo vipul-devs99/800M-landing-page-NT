@@ -1,12 +1,32 @@
 import { Phone, Wrench, Repeat1, CreditCard } from "lucide-react";
+import Call from "../../public/assets/Icon/phone.svg";
+import WhatsApp from "../../public/assets/Icon/whatsapp.svg";
+import ButtonPrimary from "../misc/ButtonPrimary";
 
 export default function HowItWorks() {
   return (
     <div className="bg-yellow-200">
       <div className="w-full mx-auto px-4 py-12 max-w-7xl">
-        <h3 className="text-3xl lg:text-4xl text-center font-medium leading-relaxed text-black-600 mb-12">
-          Here’s How It Works
-        </h3>
+        <div className="container mx-auto text-center px-4 pt-10">
+        {/* Section Title */}
+        <div className="flex flex-col items-center">
+          <div className="flex items-center mb-4">
+            <span className="block w-10 h-1 bg-yellow-500 mr-2"></span>
+            <h2 className="text-yellow-500 font-semibold text-xl  uppercase">
+            Here’s How It Works
+            </h2>
+            <span className="block w-10 h-1 bg-yellow-500 ml-2"></span>
+           
+          </div>
+          <h3 className="text-black-900 font-semibold text-3xl mb-4">Lorem Ipsum is simply and typesetting industry.
+          </h3>
+        </div>
+
+        {/* Description */}
+        <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        </p>
+      </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
           {/* Step 1 */}
@@ -146,15 +166,34 @@ export default function HowItWorks() {
             </p>
           </div>
         </div>
-
-        <div className="mt-12 text-center">
-          <a
-            href="tel:80063242642"
-            className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white bg-orange-400 rounded-md hover:bg-orange-500 transition-colors"
-          >
-            <Phone className="w-6 h-6 text-orange-400 mr-2" /> CALL US FOR HELP
-          </a>
-        </div>
+        <div className="flex justify-center items-center gap-6">
+              
+              <button
+                className={
+                  "py-3 lg:py-3 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-black-600 hover:shadow-yellow-md transition-all outline-none "
+                }
+              >
+                <a
+                  href="tel:+971509344668"
+                  className="flex justify-center items-center text-xs lg:text-sm py-1 "
+                >
+                  <Call className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
+                  <span className="">Call Now!</span>
+                </a>
+              </button>
+              <ButtonPrimary>
+                <a
+                  href="https://wa.me/+971509344668?text=Can I get more details about your service?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center items-center text-xs lg:text-sm py-1"
+                >
+                  <WhatsApp className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
+                  <span className="">WhatsApp!</span>
+                </a>
+              </ButtonPrimary>
+            </div>
+        
       </div>
     </div>
   );

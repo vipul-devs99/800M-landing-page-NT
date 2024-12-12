@@ -19,20 +19,7 @@ const Emergency = () => {
               </h5>
               <p className="mt-3">We’ll reach you within 30 minutes.</p>
               <div className="flex justify-start lg:flex-row flex-col items-center gap-2 mt-6 ">
-              <button
-                className={
-                  "py-3 lg:py-3 px-6 lg:px-6  text-white-500 font-semibold rounded-lg bg-yellow-500 hover:shadow-yellow-md transition-all outline-none "
-                }
-              >
-                <a
-                  href="tel:+971509344668"
-                  className="flex justify-center items-center text-xs lg:text-sm py-1 lg:w-32 w-44 mx-auto"
-              
-                >
-                  <WhatsApp className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
-                  <span className="">WhatsApp Us!</span>
-                </a>
-                </button>
+             
               <button
                 className={
                   "py-3 lg:py-3 px-6 lg:px-6 text-white-500 font-semibold rounded-lg bg-black-600 hover:shadow-yellow-md transition-all outline-none "
@@ -46,6 +33,20 @@ const Emergency = () => {
                   <span className="">Call Now!</span>
                 </a>
               </button>
+              <button
+                className={
+                  "py-3 lg:py-3 px-6 lg:px-6  text-white-500 font-semibold rounded-lg bg-green-600 hover:shadow-yellow-md transition-all outline-none "
+                }
+              >
+                <a
+                  href="tel:+971509344668"
+                  className="flex justify-center items-center text-xs lg:text-sm py-1 lg:w-32 w-44 mx-auto"
+              
+                >
+                  <WhatsApp className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
+                  <span className="">WhatsApp!</span>
+                </a>
+                </button>
             </div>
             </div>
             <div>

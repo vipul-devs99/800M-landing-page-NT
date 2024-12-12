@@ -59,17 +59,28 @@ const BatterySection = () => {
     <div className="max-w-screen-xl px-10 sm:px-8 lg:px-20 mx-auto flex flex-col w-full text-center justify-center items-center my-16">
          
         <ScrollAnimationWrapper>
-            <motion.h3
-              variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-8/12 mx-auto">
-              Our Battery Brands{" "}
-            </motion.h3>
-            <motion.p
-              variants={scrollAnimation}
-              className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-9/12 lg:w-8/12"
-            >
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-            </motion.p>
+           
+
+            <div className="container mx-auto text-center px-4">
+        {/* Section Title */}
+        <div className="flex flex-col items-center">
+          <div className="flex items-center mb-4">
+            <span className="block w-10 h-1 bg-yellow-500 mr-2"></span>
+            <h2 className="text-yellow-500 font-semibold text-xl  uppercase">
+              Products
+            </h2>
+            <span className="block w-10 h-1 bg-yellow-500 ml-2"></span>
+           
+          </div>
+          <h3 className="text-black-900 font-semibold text-3xl mb-4">Our Battery Brands
+          </h3>
+        </div>
+
+        {/* Description */}
+        <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
+       Lorem of our automobile battery replacement services. Our services help you get back on the road– we know your time and safety are important.
+        </p>
+      </div>
           </ScrollAnimationWrapper> 
       <div className="flex flex-col w-full mt-10 mb-48">
         <ScrollAnimationWrapper>

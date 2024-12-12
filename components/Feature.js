@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import ButtonPrimary from "./misc/ButtonPrimary";
-import WhatsAppDark from "../public/assets/Icon/whatsapp.svg";
+import Call from "../public/assets/Icon/phone.svg";
+import WhatsApp from "../public/assets/Icon/whatsapp.svg";
 
 const features = [
   "24/7 Emergency Service",
@@ -37,15 +38,23 @@ const Feature = () => {
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper>
           <motion.div
-            className="flex flex-col lg:mt-10  justify-center ml-auto w-full lg:w-9/12"
+            className="flex flex-col lg:mt-10  justify-center ml-auto w-full "
             variants={scrollAnimation}
           >
-            <h3 className="text-3xl lg:text-4xl text-start font-medium leading-relaxed text-black-600">
-              Key Service Benefits
-            </h3>
-            <p className="my-2 text-black-500">
-              Fast, Reliable, and Professional Car Battery Replacement in UAE.
-            </p>
+            <div className="flex flex-col items-start">
+          <div className="flex items-center mb-4">
+            <span className="block w-10 h-1 bg-yellow-500 mr-2"></span>
+            <h2 className="text-yellow-500 font-semibold text-xl  uppercase">
+            Key Service Benefits
+            </h2>
+            <span className="block w-10 h-1 bg-yellow-500 ml-2"></span>
+           
+          </div>
+          <h3 className="text-black-900 font-semibold text-3xl mb-4">Fast, Reliable, and Professional Car Battery Replacement in UAE.
+          </h3>
+        </div>
+            
+            
             <ul className="text-black-500 self-start list-inside ml-8 mb-4 mt-4">
               {features.map((feature, index) => (
                 <motion.li
@@ -64,17 +73,33 @@ const Feature = () => {
                 </motion.li>
               ))}
             </ul>
-            <ButtonPrimary>
-              <a
-               href="https://wa.me/+971509344668?text=Can I get more details about your service?"
-               target="_blank"
-               rel="noopener noreferrer"
-                className="flex justify-center items-center text-xs lg:text-sm py-1"
+            <div className="flex justify-start items-center gap-2">
+              
+              <button
+                className={
+                  "py-3 lg:py-3 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-black-600 hover:shadow-yellow-md transition-all outline-none "
+                }
               >
-                <WhatsAppDark className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-black-900 " />
-                <span className="">WhatsApp Us!</span>
-              </a>
-            </ButtonPrimary>
+                <a
+                  href="tel:+971509344668"
+                  className="flex justify-center items-center text-xs lg:text-sm py-1 "
+                >
+                  <Call className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
+                  <span className="">Call Now!</span>
+                </a>
+              </button>
+              <ButtonPrimary>
+                <a
+                  href="https://wa.me/+971509344668?text=Can I get more details about your service?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center items-center text-xs lg:text-sm py-1"
+                >
+                  <WhatsApp className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
+                  <span className="">WhatsApp!</span>
+                </a>
+              </ButtonPrimary>
+            </div>
           </motion.div>
         </ScrollAnimationWrapper>
       </div>

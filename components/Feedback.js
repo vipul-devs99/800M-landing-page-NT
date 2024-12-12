@@ -20,14 +20,22 @@ const Feedback = () => {
         {/* <TrustSection /> */}     
         <div className="flex flex-col w-full mt-16" id="testimoni">
           <ScrollAnimationWrapper>
-            <motion.h3
-              variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
-              Testimonials{" "}
-            </motion.h3>
+          <div className="flex flex-col items-center">
+              <div className="flex items-center mb-4">
+                <span className="block w-10 h-1 bg-yellow-500 mr-2"></span>
+                <h2 className="text-yellow-500 font-semibold text-xl  uppercase">
+                Testimonials
+                </h2>
+                <span className="block w-10 h-1 bg-yellow-500 ml-2"></span>
+              </div>
+              <h3 className="text-black-900 font-semibold text-3xl mb-2">
+              Lorem of our customers epsum have joined us
+              </h3>
+            </div>
+            
             <motion.p
               variants={scrollAnimation}
-              className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
+              className="leading-normal mx-auto mb-2 mt-2 w-10/12 sm:w-7/12 lg:w-6/12"
             >
               These are the stories of our customers who have joined us with great
               pleasure when using this crazy feature.
