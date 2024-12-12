@@ -28,7 +28,7 @@ export default function SecurityLanding() {
               className="h-44"
             />
           </div>
-          <div className="absolute bottom-0 left-0 right-0 bg-[#FDB813] p-6 ">
+          <div className="absolute bottom-0 left-0 right-0 bg-yellow-800 p-6 ">
             <div className="flex items-center gap-2 text-white">
               <RocketIcon className="w-6 h-6" />
               <p className="text-lg font-semibold text-black-900">
@@ -42,12 +42,7 @@ export default function SecurityLanding() {
           <div>
             <div className="flex flex-col items-start">
               <div className="flex items-center mb-4">
-                {/* <span className="block w-10 h-1 bg-yellow-500 mr-2"> </span> */}
-                
-                {/* <h2 className="text-yellow-500 font-semibold text-lg  uppercase">
-                  Why Choose Us
-                </h2>
-                <span className="block w-10 h-1 bg-yellow-500 ml-2"></span> */}
+               
               </div>
             </div>
 
