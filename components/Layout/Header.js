@@ -70,24 +70,26 @@ const Header = () => {
             >
               About
             </LinkScroll>
-             <LinkScroll
+            <LinkScroll
               activeClass="active"
-              to="services"
+              to="benifits"
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("services");
+                setActiveLink("benifits");
               }}
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "services"
+                (activeLink === "benifits"
                   ? " text-yellow-500 animation-active "
                   : " text-white-500 hover:text-yellow-500 ")
               }
             >
-              Services
+              Benifits
             </LinkScroll>
+            
+            
 
             <LinkScroll
               activeClass="active"
@@ -107,6 +109,42 @@ const Header = () => {
             >
               Testimonial
             </LinkScroll>
+            <LinkScroll
+              activeClass="active"
+              to="products"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              onSetActive={() => {
+                setActiveLink("products");
+              }}
+              className={
+                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                (activeLink === "products"
+                  ? " text-yellow-500 animation-active "
+                  : " text-white-500 hover:text-yellow-500 ")
+              }
+            >
+              Products
+            </LinkScroll>
+            <LinkScroll
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              onSetActive={() => {
+                setActiveLink("contact");
+              }}
+              className={
+                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                (activeLink === "contact"
+                  ? " text-yellow-500 animation-active "
+                  : " text-white-500 hover:text-yellow-500 ")
+              }
+            >
+              Contact
+            </LinkScroll>
           </ul>
           <div className="lg:col-start-10 lg:col-end-12 font-medium flex justify-end items-center">
             <ButtonOutline>
@@ -115,7 +153,7 @@ const Header = () => {
                 className="flex justify-center items-center text-xs lg:text-sm py-1"
               >
                 <Call className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
-                <span className="block lg:hidden">Call Now!</span>
+                <span className="block lg:hidden">Emergency? Call Now!</span>
                 <span className="hidden lg:block">
                   Emergency? Click to call!
                 </span>
@@ -126,7 +164,7 @@ const Header = () => {
       </header>
       {/* Mobile Navigation */}
 
-      <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t bg-black-900">
+      {/* <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t bg-black-900">
         <div className="bg-black-900 sm:px-3">
           <ul className="flex w-full justify-between items-center text-black-500">
             <LinkScroll
@@ -225,6 +263,7 @@ const Header = () => {
               </svg>
               Services
             </LinkScroll>
+            
            
             <LinkScroll
               activeClass="active"
@@ -260,7 +299,7 @@ const Header = () => {
             </LinkScroll>
           </ul>
         </div>
-      </nav>
+      </nav> */}
       {/* End Mobile Navigation */}
     </>
   );

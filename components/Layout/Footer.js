@@ -5,7 +5,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="bg-black-900 pt-44 pb-20">
-      <div className="max-w-screen-xl mx-auto w-full px-6 sm:px-8 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="max-w-screen-xl mx-auto w-full px-6 sm:px-8 lg:px-16 grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div className=" ">
           <Image
             src="/assets/800bLogo.webp"
@@ -38,15 +38,9 @@ const Footer = () => {
             </a>
           </div>
 
-          <Image
-            src="/assets/GmapCode.webp"
-            alt="automobile battery replacement"
-            width={80}
-            height={80}
-            className=""
-          />
+         
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 col-span-2">
           <div className=" ">
             <p className=" mb-4 font-bold text-lg text-yellow-500">
               Quick Link
@@ -59,36 +53,56 @@ const Footer = () => {
                 <a href="#about">About</a>
               </li>
               <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-                <a href="#services">Services</a>
+                <a href="#benifits">Benifits</a>
               </li>
               <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
                 <a href="#testimonial">Testimonial</a>
               </li>
-            </ul>
-          </div>
-          <div className="">
-            <p className=" mb-4 font-bold text-lg text-yellow-500">Engage</p>
-            <ul className="text-black-500">
               <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-                800Mechanic ?{" "}
+                <a href="#products">Products</a>
               </li>
               <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-                FAQ{" "}
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          {/* <div className="">
+            <p className=" mb-4 font-bold text-lg text-yellow-500">Our Sevices</p>
+            <ul className="text-black-500">
+              <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+              <a href="https://www.800bbattery.com/service/home-battery-replacement" target="_blank">Home Battery Replacement{" "}</a>
+              </li>
+              <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+              <a href="https://www.800bbattery.com/service/road-side-assistance" target="_blank">Road side assistance{" "}</a>
               </li>
 
               <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-                Privacy Policy{" "}
+              <a href="https://www.800bbattery.com/service/in-store-battery-replacement" target="_blank">Road side assistance{" "}</a>
+              In-store Battery Replacement{" "}
               </li>
               <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-                Terms of Service{" "}
+              <a href="https://www.800bbattery.com/service/onsite-battery-replacement" target="_blank">Road side assistance{" "}</a>
+              Onsite Battery Replacement{" "}
               </li>
             </ul>
-          </div>
+          </div> */}
+        
           <div className="">
             <p className=" mb-4 font-bold text-lg text-yellow-500">
-              Contact Info
+              Address
             </p>
             <ul className="text-black-500">
+              <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+               Al Asayel Street - 160St Warehouse no. 2 - 318th Rd - near Al Ahli Driving school - Al Quoz Industrial Area 3 - Dubai
+              </li>
+              
+            </ul>
+           
+            
+          </div>
+          <div className="">  
+            <p className=" mb-4 font-bold text-lg text-yellow-500">Contact Us</p>
+            <ul className="text-black-500 mt-8 mb-6">
               <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
                 <a href="tel:+971509344668">+971 50 934 4668</a>
               </li>
@@ -98,12 +112,22 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
+            <Image
+            src="/assets/GmapCode.webp"
+            alt="automobile battery replacement"
+            width={80}
+            height={80}
+            className="mt-6"
+          />
           </div>
         </div>
-        <p className="text-gray-400 mt-4">
-          Copyright ©{new Date().getFullYear()} - 800Mechanic
-        </p>
+       
       </div>
+      <p className="text-gray-400 mt-4 max-w-screen-xl mx-auto w-full px-6 sm:px-8 lg:px-16">
+          Copyright ©{new Date().getFullYear()} -by 800 BBattery. All rights reserved. Developed by <span className="text-yellow-500"><a
+              href="https://www.mightywarner.ae/"
+              target="_blank">Mighty Warners </a></span>
+        </p>
     </div>
   );
 };

@@ -49,14 +49,14 @@ const BatterySection = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
     ],
   };
 
   return (
-    <div className="max-w-screen-xl px-10 sm:px-8 lg:px-20 mx-auto flex flex-col w-full text-center justify-center items-center my-16">
+    <div className="max-w-screen-xl px-10 sm:px-8 lg:px-20 mx-auto flex flex-col w-full text-center justify-center items-center my-16" id="products">
          
         <ScrollAnimationWrapper>
            
@@ -84,7 +84,7 @@ const BatterySection = () => {
         </p>
       </div>
           </ScrollAnimationWrapper> 
-      <div className="flex flex-col w-full mt-10 mb-48">
+      <div className="flex flex-col w-full mt-10 lg:mb-48 mb-12">
         <ScrollAnimationWrapper>
           <motion.div className="w-full mt-4 relative" variants={scrollAnimation}>
             <Slider {...sliderSettings}>

@@ -11,7 +11,7 @@ const features = [
   "No Hidden Fees – Delivery and Service Are Free",
   "Enjoy a 24-Month Warranty on Your New Battery",
   "Free Car Battery Jumpstart and Full Inspection",
-  "Will  Get 15% winter offer for battery replacement",
+ 
 ];
 
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <div
-      className="max-w-screen-xl lg:mt-32 mt-20 lg:px-8 px-4 xl:px-16 mx-auto"
+      className="max-w-screen-xl lg:mt-32 mt-20 lg:px-8 px-4 xl:px-16 mx-auto heroBanner"
       id="home"
     >
       <ScrollAnimationWrapper>
@@ -36,8 +36,8 @@ const Hero = () => {
             Anytime, Anywhere.
             </h2>
             <div>
-  <p className="text-black-900 mt-4 mb-6 bg-yellow-500/20 p-2 border-2 border-dashed border-yellow-500 animate-text">
-    ( Get 15% winter offer for battery replacement )
+  <p className="text-black-900 mt-4 mb-6 font-semibold bg-yellow-500/20 p-2 border-2 border-dashed border-yellow-500 animate-text">
+  Get 15% winter offer for battery replacement 
   </p>
  
 </div>
@@ -128,7 +128,7 @@ const Hero = () => {
               variants={scrollAnimation}
             >
               <Image
-                src="/assets/heroBanner.webp"
+                src="/assets/image-1500x1000.webp"
                 alt="car battery replacement service"
                 quality={100}
                 width={612}

@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-
-// import react slick
 import Slider from "react-slick";
 import Image from "next/image";
 import Stars from "../public/assets/Icon/stars.svg";
@@ -95,7 +93,7 @@ const Testimoni = ({
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
                   <Image
-                    src={listTestimonis.image}
+                    src="/assets/Google-logo.png"
                     height={50}
                     width={50}
                     alt="Icon People"

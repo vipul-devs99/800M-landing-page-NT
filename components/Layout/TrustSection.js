@@ -1,4 +1,4 @@
-import {  Star, Truck,  ShieldCheck, Phone, Clock  } from 'lucide-react'
+import {  Star, Truck,  ShieldCheck,  Clock, Wrench    } from 'lucide-react'
 import React from "react";
 
 export default function TrustSection() {
@@ -46,7 +46,7 @@ export default function TrustSection() {
 
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-full bg-yellow-500/10">
-                <Phone className="w-6 h-6 text-yellow-500" />
+                <Wrench   className="w-6 h-6 text-yellow-500" />
               </div>
               <div>
                 <div className="text-2xl font-bold text-start text-yellow-500">24/7</div>

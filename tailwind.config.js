@@ -51,7 +51,12 @@ module.exports = {
         500: "#DDDDDD",
       },
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'heroBanner': "url('./public/assets/banner-background-1920x700.jpg')",
+      }
+      
+    },
   },
   variants: {
     extend: {
