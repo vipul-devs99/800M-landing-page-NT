@@ -26,7 +26,7 @@ const Header = () => {
           <div className="col-start-1 col-end-2 flex items-center">
             <Image
               src="/assets/800bLogo.webp"
-              alt="logo"
+              alt="automobile battery replacement"
               width={120}
               height={42}
               className=""
@@ -51,24 +51,7 @@ const Header = () => {
             >
               Home
             </LinkScroll>
-            <LinkScroll
-              activeClass="active"
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("services");
-              }}
-              className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "services"
-                  ? " text-yellow-500 animation-active "
-                  : " text-white-500 hover:text-yellow-500 ")
-              }
-            >
-              Services
-            </LinkScroll>
+          
             <LinkScroll
               activeClass="active"
               to="about"
@@ -87,20 +70,37 @@ const Header = () => {
             >
               About
             </LinkScroll>
-           
-
-            <LinkScroll
+             <LinkScroll
               activeClass="active"
-              to="testimoni"
+              to="services"
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("testimoni");
+                setActiveLink("services");
               }}
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "testimoni"
+                (activeLink === "services"
+                  ? " text-yellow-500 animation-active "
+                  : " text-white-500 hover:text-yellow-500 ")
+              }
+            >
+              Services
+            </LinkScroll>
+
+            <LinkScroll
+              activeClass="active"
+              to="testimonial"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              onSetActive={() => {
+                setActiveLink("testimonial");
+              }}
+              className={
+                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                (activeLink === "testimonial"
                   ? " text-yellow-500 animation-active "
                   : " text-white-500 hover:text-yellow-500 ")
               }
@@ -161,40 +161,7 @@ const Header = () => {
               </svg>
               Home
             </LinkScroll>
-         
-            <LinkScroll
-              activeClass="active"
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("services");
-              }}
-              className={
-                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "services"
-                  ? "  border-yellow-500 text-yellow-500"
-                  : " border-transparent ")
-              }
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 13l-4-4m0 0l-4 4m4-4l-4 4m4-4L6 19a2 2 0 01-2 2h-3v-3l3-3a2 2 0 012 0l7-7a2 2 0 012 2l2 2a2 2 0 012 2v1l-3-3z"
-                />
-              </svg>
-              Services
-            </LinkScroll>
-            <LinkScroll
+          <LinkScroll
               activeClass="active"
               to="about"
               spy={true}
@@ -228,16 +195,49 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="testimoni"
+              to="services"
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("testimoni");
+                setActiveLink("services");
               }}
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "testimoni"
+                (activeLink === "services"
+                  ? "  border-yellow-500 text-yellow-500"
+                  : " border-transparent ")
+              }
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 13l-4-4m0 0l-4 4m4-4l-4 4m4-4L6 19a2 2 0 01-2 2h-3v-3l3-3a2 2 0 012 0l7-7a2 2 0 012 2l2 2a2 2 0 012 2v1l-3-3z"
+                />
+              </svg>
+              Services
+            </LinkScroll>
+           
+            <LinkScroll
+              activeClass="active"
+              to="testimonial"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              onSetActive={() => {
+                setActiveLink("testimonial");
+              }}
+              className={
+                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
+                (activeLink === "testimonial"
                   ? "  border-yellow-500 text-yellow-500"
                   : " border-transparent ")
               }

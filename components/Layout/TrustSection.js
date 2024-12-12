@@ -1,9 +1,5 @@
-import { Clock, Star, Truck, Users, Phone, ShieldCheck  } from 'lucide-react'
+import {  Star, Truck,  ShieldCheck  } from 'lucide-react'
 import React from "react";
-import Call from "../../public/assets/Icon/phone.svg";
-import WhatsApp from "../../public/assets/Icon/whatsapp.svg";
-import ButtonPrimary from '../misc/ButtonPrimary';
-
 
 export default function TrustSection() {
   return (
@@ -69,32 +65,7 @@ export default function TrustSection() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col  lg:flex-row justify-start lg:items-center gap-2">
-              <ButtonPrimary>
-                <a
-                  href="https://wa.me/+971509344668?text=Can I get more details about your service?"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex justify-center items-center text-xs lg:text-sm py-1 w-32 mx-auto"
-                >
-                  <WhatsApp className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
-                  <span className="">WhatsApp Us!</span>
-                </a>
-              </ButtonPrimary>
-              <button
-                className={
-                  "py-3 lg:py-3 px-6 lg:px-16 text-white-500 font-semibold rounded-lg bg-black-600 hover:shadow-yellow-md transition-all outline-none min-w-32 max-w-44 border-white-500/20 border"
-                }
-              >
-                <a
-                  href="tel:+971509344668"
-                  className="flex justify-center items-center text-xs lg:text-sm py-1 w-44 mx-auto"
-                >
-                  <Call className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
-                  <span className="">Call Now!</span>
-                </a>
-              </button>
-            </div>
+           
           </div>
          
         </div>

@@ -33,7 +33,7 @@ const BatterySection = () => {
   const sliderSettings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -79,70 +79,53 @@ const BatterySection = () => {
                 <img
                   src="/assets/800b/ac-delco.webp"
                   className="lg:h-14 h-10  w-auto"
-                  alt="AC Delco"
+                  alt="AC Delco car battery replacement"
                 />
               </div>
               <div className="flex justify-center">
                 <img
                   src="/assets/800b/amaron-battery.webp"
                   className="lg:h-14 h-10  w-auto"
-                  alt="Amaron Battery"
+                  alt="Amaron auto battery replacement
+"
                 />
               </div>
-              <div className="flex justify-center">
-                <img
-                  src="/assets/800b/asimco-mf.webp"
-                  className="h-12 w-auto"
-                  alt="Asimco MF"
-                />
-              </div>
-              <div className="flex justify-center">
-                <img
-                  src="/assets/800b/asimco-plus.webp"
-                  className="lg:h-14 h-10  w-auto"
-                  alt="Asimco Plus"
-                />
-              </div>
+             
+             
               <div className="flex justify-center">
                 <img
                   src="/assets/800b/bosch.webp"
                   className="h-12 w-auto"
-                  alt="Bosch"
+                  alt="Bosch automobile battery replacement"
                 />
               </div>
               <div className="flex justify-center">
                 <img
                   src="/assets/800b/fiamm.webp"
                   className="h-12 w-auto"
-                  alt="Asimco MF"
+                  alt="fiamm auto battery service"
                 />
               </div>
               <div className="flex justify-center">
                 <img
                   src="/assets/800b/Energizer.webp"
                   className="lg:h-14 h-10  w-auto"
-                  alt="Asimco Plus"
+                  alt="Energizer car battery change"
                 />
               </div>
-              <div className="flex justify-center">
-                <img
-                  src="/assets/800b/solite.webp"
-                  className="h-12 w-auto"
-                  alt="Bosch"
-                />
-              </div>
+              
               <div className="flex justify-center">
                 <img
                   src="/assets/800b/varta.webp"
                   className="h-12 w-auto"
-                  alt="Bosch"
+                  alt="varta car battery services"
                 />
               </div>
               <div className="flex justify-center">
                 <img
                   src="/assets/800b/excide-batteries.webp"
                   className="h-12 w-auto"
-                  alt="Bosch"
+                  alt="excide auto battery service near me"
                 />
               </div>
             </Slider>

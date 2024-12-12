@@ -10,40 +10,40 @@ import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 const Testimoni = ({
   listTestimoni = [
     {
-      name: "iezh Robert",
+      name: "Ahmed Khalid",
       image: "/assets/people-3.png",
       city: "Warsaw",
       country: "Poland",
-      rating: "4.5",
+      rating: "4.9",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. 800Mechanic always the best",
+        "I called them for a car battery replacement, and they reached my spot in less than 20 minutes! The team was polite and professional. Now they are my favorite car battery shop near me. 5 stars",
     },
     {
-      name: "iezh Robert",
+      name: "Mohammed Saeed",
       image: "/assets/people-3.png",
       city: "Warsaw",
       country: "Poland",
-      rating: "4.5",
+      rating: "4.7",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. 800Mechanic always the best",
+        "If you are looking for auto battery replacement, 800 B Battery is the perfect place you can rely on. They use only premium quality products for their customers. It’s great to have a trustworthy car battery shop near me for all my needs",
     },
     {
-      name: "iezh Robert",
+      name: "Maria Lopez",
       image: "/assets/people-3.png",
       city: "Warsaw",
       country: "Poland",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. 800Mechanic always the best",
+        "I badly needed an auto battery replacement in the middle of nowhere, and I was hopeless. Somehow, I contacted 800 B Battery and they did their work in a jiffy. Flexible payment options were a bonus! They have the best automobile battery replacement services",
     },
     {
-      name: "iezh Robert",
+      name: "David Lee",
       image: "/assets/people-3.png",
       city: "Warsaw",
       country: "Poland",
-      rating: "4.5",
+      rating: "4.8",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. 800Mechanic always the best",
+        "Got my car battery changed here a few days back. The pricing was fair, and the service was top-notch. I’ll always come back to 800 B Battery for car battery services. Highly recommended",
     },
   ],
 }) => {
@@ -89,9 +89,9 @@ const Testimoni = ({
         ref={setSliderRef}
         className="flex items-stretch justify-items-stretch"
       >
-        {listTestimoni.map((listTestimonis, index) => (
+        {listTestimoni?.map((listTestimonis, index) => (
           <div className="px-3 flex items-stretch" key={index}>
-            <div className="border-2 border-gray-500 hover:border-yellow-500 transition-all rounded-lg p-8 flex flex-col">
+            <div className="border-2 border-gray-500 hover:border-yellow-500 transition-all rounded-lg p-8 flex flex-col lg:h-80">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
                   <Image

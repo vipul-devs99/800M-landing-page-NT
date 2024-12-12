@@ -26,7 +26,7 @@ const Feature = () => {
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
               src="/assets/key-features_510x420.webp"
-              alt="Service Benefits"
+              alt="automotive battery servicing"
               layout="responsive"
               quality={100}
               height={414}

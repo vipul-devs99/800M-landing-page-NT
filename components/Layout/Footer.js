@@ -9,7 +9,7 @@ const Footer = () => {
         <div className=" ">
           <Image
             src="/assets/800bLogo.webp"
-            alt="logo"
+            alt="auto battery replacement"
             width={120}
             height={42}
             className=""
@@ -40,72 +40,69 @@ const Footer = () => {
 
           <Image
             src="/assets/GmapCode.webp"
-            alt="logo"
+            alt="automobile battery replacement"
             width={80}
             height={80}
             className=""
           />
-         
         </div>
-       <div className="grid grid-cols-1 lg:grid-cols-3">
-       <div className=" ">
-          <p className=" mb-4 font-bold text-lg text-yellow-500">Quick Link</p>
-          <ul className="text-black-500 ">
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Home{" "}
-            </li>
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              About{" "}
-            </li>
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Services{" "}
-            </li>
+        <div className="grid grid-cols-1 lg:grid-cols-3">
+          <div className=" ">
+            <p className=" mb-4 font-bold text-lg text-yellow-500">
+              Quick Link
+            </p>
+            <ul className="text-black-500 ">
+              <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+                <a href="#home">Home</a>
+              </li>
+              <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+                <a href="#about">About</a>
+              </li>
+              <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+                <a href="#services">Services</a>
+              </li>
+              <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+                <a href="#testimonial">Testimonial</a>
+              </li>
+            </ul>
+          </div>
+          <div className="">
+            <p className=" mb-4 font-bold text-lg text-yellow-500">Engage</p>
+            <ul className="text-black-500">
+              <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+                800Mechanic ?{" "}
+              </li>
+              <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+                FAQ{" "}
+              </li>
 
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Testimonial{" "}
-            </li>
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Contact{" "}
-            </li>
-          </ul>
+              <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+                Privacy Policy{" "}
+              </li>
+              <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+                Terms of Service{" "}
+              </li>
+            </ul>
+          </div>
+          <div className="">
+            <p className=" mb-4 font-bold text-lg text-yellow-500">
+              Contact Info
+            </p>
+            <ul className="text-black-500">
+              <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+                <a href="tel:+971509344668">+971 50 934 4668</a>
+              </li>
+              <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
+                <a href="mailto:support@800bbattery.com">
+                  support@800bbattery.com
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="">
-          <p className=" mb-4 font-bold text-lg text-yellow-500">Engage</p>
-          <ul className="text-black-500">
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              800Mechanic ?{" "}
-            </li>
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              FAQ{" "}
-            </li>
-
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Privacy Policy{" "}
-            </li>
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              Terms of Service{" "}
-            </li>
-          </ul>
-        </div>
-        <div className="">
-          <p className=" mb-4 font-bold text-lg text-yellow-500">
-            Contact Info
-          </p>
-          <ul className="text-black-500">
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              <a href="tel:+971509344668">+971 50 934 4668</a>
-            </li>
-            <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-              <a href="mailto:support@800bbattery.com">
-                support@800bbattery.com
-              </a>
-            </li>
-          </ul>
-        </div>
-       </div>
-       <p className="text-gray-400 mt-4">
-            Copyright ©{new Date().getFullYear()} - 800Mechanic
-          </p>
+        <p className="text-gray-400 mt-4">
+          Copyright ©{new Date().getFullYear()} - 800Mechanic
+        </p>
       </div>
     </div>
   );

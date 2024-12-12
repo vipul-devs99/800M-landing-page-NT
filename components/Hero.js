@@ -87,7 +87,7 @@ const Hero = () => {
             >
               <Image
                 src="/assets/heroBanner.webp"
-                alt="800 Illustrasi"
+                alt="car battery replacement service"
                 quality={100}
                 width={612}
                 height={483}
