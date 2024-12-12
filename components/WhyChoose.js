@@ -14,7 +14,7 @@ import WhatsApp from "../public/assets/Icon/whatsapp.svg";
 
 export default function SecurityLanding() {
   return (
-    <div className=" py-12 bg-yellow-200">
+    <div className=" py-12 bg-yellow-200 ">
       <div className="max-w-7xl mx-auto  grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
         <div className="relative">
           <div className="relative aspect-[4/3] w-full">

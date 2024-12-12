@@ -16,9 +16,9 @@ module.exports = {
       t: "0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
       yellow: "0px 20px 20px -15px rgb(242, 135, 28) ",
       "yellow-md": "0px 20px 40px -15px rgba(242, 135, 28,0.81) ",
-      red: "0px 20px 20px -15px rgb(211, 47, 47) ",
-      "yellow-md": "0px 20px 40px -15px rgba(211, 47, 47,0.81) ",
-      none: "none",
+      // red: "0px 20px 20px -15px rgb(211, 47, 47) ",
+      // "yellow-md": "0px 20px 40px -15px rgba(211, 47, 47,0.81) ",
+      // none: "none",
     },
     colors: {
       transparent: "transparent",
