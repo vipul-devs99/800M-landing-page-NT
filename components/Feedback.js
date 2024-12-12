@@ -29,7 +29,8 @@ const Feedback = () => {
                 <span className="block w-10 h-1 bg-yellow-500 ml-2"></span>
               </div>
               <h3 className="text-black-900 font-semibold text-3xl mb-2">
-              Lorem of our customers epsum have joined us
+              Stories That Reflect Trust And Satisfaction
+
               </h3>
             </div>
             
@@ -37,8 +38,8 @@ const Feedback = () => {
               variants={scrollAnimation}
               className="leading-normal mx-auto mb-2 mt-2 w-10/12 sm:w-7/12 lg:w-6/12"
             >
-              These are the stories of our customers who have joined us with great
-              pleasure when using this crazy feature.
+              Here’s what our happy customers have to say about their experience with our exceptional services.
+
             </motion.p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="w-full flex flex-col py-12">

@@ -2,8 +2,7 @@ import Image from "next/image";
 
 import {
   RocketIcon,
-  Settings2Icon,
-  MonitorSmartphoneIcon,
+  Wrench ,
   Clock4Icon,
   Award,
   BadgeCheck,
@@ -29,18 +28,13 @@ export default function SecurityLanding() {
                 <span className="block w-10 h-1 bg-yellow-500 ml-2"></span>
               </div>
               <h3 className="text-black-900 font-semibold text-3xl mb-4">
-                Lorem, epsum, and Lorem Car lorem Replacement in UAE.
+              Experience Unmatched Battery Services, Always
+
               </h3>
             </div>
 
             <p className="text-gray-600">
-              Choose 800 B Battery for reliable, fast, and convenient{" "}
-              <strong>car battery services</strong>. We provide up to 18 months
-              of warranty on all our products and services, and flexible payment
-              plans. Our team is available 24/7 and will reach your location
-              within 25 minutes, ensuring minimal disruption to your{" "}
-              <strong>car battery changes</strong>. Our premium German-brand
-              batteries, guarantee top-notch performance and longevity.
+            Choose 800 B Battery for reliable, fast, and convenient <strong>car battery services </strong>. We provide up to 18 months of warranty on all our products and services, and flexible payment plans. Our team is available 24/7 and will reach your location within 25 minutes, ensuring minimal disruption to your <strong> car battery changes </strong>. Our premium German-brand batteries guarantee top-notch performance and longevity.
             </p>
           </div>
 
@@ -69,11 +63,12 @@ export default function SecurityLanding() {
 
             <div className="flex justify-start items-center gap-1">
               <div className="p-1 bg-blue-50 rounded-lg">
-                <RocketIcon className="w-8 h-8 text-yellow-500" />
+                <Wrench  className="w-8 h-8 text-yellow-500" />
               </div>
               <div>
                 <h3 className="font-semibold text-black-900 mb-1">
-                  10,000+ Batteries Replaced
+                Round The Clock Service
+
                 </h3>
               </div>
             </div>
@@ -121,7 +116,7 @@ export default function SecurityLanding() {
         <div className="relative">
           <div className="relative aspect-[4/3] w-full">
             <Image
-              src="/assets/key-features_510x420.webp"
+              src="/assets/why-choose-us_510.webp"
               alt="car battery replacement"
               layout="responsive"
               quality={100}

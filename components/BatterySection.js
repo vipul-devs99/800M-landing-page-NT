@@ -67,18 +67,20 @@ const BatterySection = () => {
           <div className="flex items-center mb-4">
             <span className="block w-10 h-1 bg-yellow-500 mr-2"></span>
             <h2 className="text-yellow-500 font-semibold text-xl  uppercase">
-              Products
+            Our Battery Brands
+
             </h2>
             <span className="block w-10 h-1 bg-yellow-500 ml-2"></span>
            
           </div>
-          <h3 className="text-black-900 font-semibold text-3xl mb-4">Our Battery Brands
+          <h3 className="text-black-900 font-semibold text-3xl mb-4">Powering Your Car with the Best
+
           </h3>
         </div>
 
         {/* Description */}
         <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
-       Lorem of our automobile battery replacement services. Our services help you get back on the road– we know your time and safety are important.
+        We use only the finest battery brands to ensure top-notch performance and reliability for your vehicle.
         </p>
       </div>
           </ScrollAnimationWrapper> 

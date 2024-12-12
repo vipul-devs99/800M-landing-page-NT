@@ -18,13 +18,15 @@ export default function HowItWorks() {
             <span className="block w-10 h-1 bg-yellow-500 ml-2"></span>
            
           </div>
-          <h3 className="text-black-900 font-semibold text-3xl mb-4">Lorem Ipsum is simply and typesetting industry.
+          <h3 className="text-black-900 font-semibold text-3xl mb-4">Smooth and Efficient Assistance, Everytime
+
           </h3>
         </div>
 
         {/* Description */}
         <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        Discover how our team supports you at every step, ensuring a seamless and hassle-free car battery service experience.
+
         </p>
       </div>
 
@@ -55,7 +57,7 @@ export default function HowItWorks() {
               <Phone className="w-8 h-8 text-white-500" />
             </div>
             <h3 className="text-xl font-semibold">Contact Us</h3>
-            <p className="text-gray-600 text-sm">Call or WhatsApp us.</p>
+            <p className="text-gray-600 text-sm">Reach out to us via call or WhatsApp for instant assistance anytime.</p>
           </div>
 
           {/* Step 2 */}
@@ -85,7 +87,7 @@ export default function HowItWorks() {
             </div>
             <h3 className="text-xl font-semibold">Quick Response</h3>
             <p className="text-gray-600 text-sm">
-              Our technicians will reach you in under 30 minutes.
+            Our skilled technicians arrive at your location within 30 minutes.
             </p>
           </div>
 
@@ -115,7 +117,7 @@ export default function HowItWorks() {
             </div>
             <h3 className="text-xl font-semibold">Battery Replaced</h3>
             <p className="text-gray-600 text-sm">
-              Fast and professional installation.
+            Experience fast, professional installation with high-quality batteries guaranteed to perform.
             </p>
           </div>
 
@@ -162,7 +164,8 @@ export default function HowItWorks() {
             </div>
             <h3 className="text-xl font-semibold">Payment Options</h3>
             <p className="text-gray-600 text-sm">
-              Easy payment after the job is done.
+            Pay conveniently with flexible options, after the service is completed to your satisfaction.
+
             </p>
           </div>
         </div>

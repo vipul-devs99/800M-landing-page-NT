@@ -21,6 +21,7 @@ const AboutUS = () => {
         {/* Description */}
         <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
         From emergency roadside assistance to onsite auto battery replacement, 800 B Battery is your ultimate destination for car battery services. We deliver fast, professional, and hassle-free solutions to keep your vehicle running smoothly. Prompt assistance and expert advice are the pillars of our automobile battery replacement services. Our services help you get back on the road– we know your time and safety are important.
+
         </p>
       </div>
     </div>
