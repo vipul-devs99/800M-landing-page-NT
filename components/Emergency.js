@@ -9,7 +9,7 @@ const Emergency = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   return (
     <div className="max-w-screen-xl h-80 lg:h-0 px-4 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center" id="contact">
-      <ScrollAnimationWrapper className="relative w-full lg:-mt-80 -mt-[460px]">
+      <ScrollAnimationWrapper className="relative w-full lg:-mt-80 -mt-96">
         <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
           <div className="absolute rounded-xl border-yellow-300 bg-yellow-300 py-8 sm:py-10 px-2 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10">
             <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-8/12 mb-6 sm:mb-0">
