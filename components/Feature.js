@@ -19,13 +19,13 @@ const Feature = () => {
   return (
     <div
       className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto "
-      id="benifits"
+      id="benefits"
     >
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 py-4 my-12">
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
-              src="/assets/key-features_510x420.webp"
+              src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/4d7df151-466f-4c2d-3761-0d87df493600/public"
               alt="automotive battery servicing"
               layout="responsive"
               quality={100}

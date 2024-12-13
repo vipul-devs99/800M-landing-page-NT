@@ -23,7 +23,7 @@ const Header = () => {
         <nav className="max-w-screen-xl px-6 sm:px-8 bg-black-900 lg:px-16 mx-auto grid grid-flow-col py-2 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
             <Image
-              src="/assets/800bLogo.webp"
+              src={`https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/a8df3196-6c39-4799-0072-92dbd37c6700/public`}
               alt="automobile battery replacement"
               width={120}
               height={42}
@@ -70,21 +70,21 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="benifits"
+              to="benefits"
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("benifits");
+                setActiveLink("benefits");
               }}
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "benifits"
+                (activeLink === "benefits"
                   ? " text-yellow-500 animation-active "
                   : " text-white-500 hover:text-yellow-500 ")
               }
             >
-              Benifits
+              Benefits
             </LinkScroll>
 
             <LinkScroll
@@ -145,7 +145,7 @@ const Header = () => {
           <div className="lg:col-start-10 lg:col-end-12 font-medium flex justify-end items-center">
           <button className="font-medium tracking-wide py-2 px-2 sm:px-8 border border-white-500 text-white-500 bg-yellow-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-[#000] hover:text-white-500 transition-all hover:shadow-yellow ">
               <a
-                href="tel:80063242642"
+                href="tel:+971509344668"
                 className="flex justify-center items-center text-xs lg:text-sm py-1"
               >
                 <Call className="lg:h-6 lg:w-6 h-4 w-4 lg:mr-2 mr-1 text-white-500 " />

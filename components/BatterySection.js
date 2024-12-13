@@ -90,38 +90,37 @@ const BatterySection = () => {
             <Slider {...sliderSettings}>
               <div className="flex justify-center items-center">
                 <img
-                  src="/assets/800b/ac-delco.webp"
+                  src="./assets/800b/ac-delco.webp"
                   className="lg:h-14 h-10  w-auto"
                   alt="AC Delco car battery replacement"
                 />
               </div>
               <div className="flex justify-center">
                 <img
-                  src="/assets/800b/amaron-battery.webp"
+                  src="./assets/800b/amaron-battery.webp"
                   className="lg:h-14 h-10  w-auto"
-                  alt="Amaron auto battery replacement
-"
+                  alt="Amaron auto battery replacement"
                 />
               </div>
              
              
               <div className="flex justify-center">
                 <img
-                  src="/assets/800b/bosch.webp"
+                  src="./assets/800b/bosch.webp"
                   className="h-12 w-auto"
                   alt="Bosch automobile battery replacement"
                 />
               </div>
               <div className="flex justify-center">
                 <img
-                  src="/assets/800b/fiamm.webp"
+                  src="./assets/800b/fiamm.webp"
                   className="h-12 w-auto"
                   alt="fiamm auto battery service"
                 />
               </div>
               <div className="flex justify-center">
                 <img
-                  src="/assets/800b/Energizer.webp"
+                  src="./assets/800b/Energizer.webp"
                   className="lg:h-14 h-10  w-auto"
                   alt="Energizer car battery change"
                 />
@@ -129,14 +128,14 @@ const BatterySection = () => {
               
               <div className="flex justify-center">
                 <img
-                  src="/assets/800b/varta.webp"
+                  src="./assets/800b/varta.webp"
                   className="h-12 w-auto"
                   alt="varta car battery services"
                 />
               </div>
               <div className="flex justify-center">
                 <img
-                  src="/assets/800b/excide-batteries.webp"
+                  src="./assets/800b/excide-batteries.webp"
                   className="h-12 w-auto"
                   alt="excide auto battery service near me"
                 />

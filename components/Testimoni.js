@@ -9,7 +9,7 @@ const Testimoni = ({
   listTestimoni = [
     {
       name: "Ahmed Khalid",
-      image: "/assets/people-3.png",
+      image: "../public/assets/people-3.png",
       city: "Warsaw",
       country: "Poland",
       rating: "4.9",
@@ -18,7 +18,7 @@ const Testimoni = ({
     },
     {
       name: "Mohammed Saeed",
-      image: "/assets/people-3.png",
+      image: "../public/assets/people-3.png",
       city: "Warsaw",
       country: "Poland",
       rating: "4.7",
@@ -27,7 +27,7 @@ const Testimoni = ({
     },
     {
       name: "Maria Lopez",
-      image: "/assets/people-3.png",
+      image: "../public/assets/people-3.png",
       city: "Warsaw",
       country: "Poland",
       rating: "4.5",
@@ -36,7 +36,7 @@ const Testimoni = ({
     },
     {
       name: "David Lee",
-      image: "/assets/people-3.png",
+      image: "../public/assets/people-3.png",
       city: "Warsaw",
       country: "Poland",
       rating: "4.8",
@@ -93,7 +93,7 @@ const Testimoni = ({
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
                   <Image
-                    src="/assets/Google-logo.png"
+                    src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/8bf500d9-9600-4447-9627-521d7788cd00/public"
                     height={50}
                     width={50}
                     alt="Icon People"

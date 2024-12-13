@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto w-full px-6 sm:px-8 lg:px-16 grid grid-cols-1 lg:grid-cols-3 gap-4">
         <div className=" ">
           <Image
-            src="/assets/800bLogo.webp"
+            src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/a8df3196-6c39-4799-0072-92dbd37c6700/public"
             alt="auto battery replacement"
             width={120}
             height={42}
@@ -55,7 +55,7 @@ const Footer = () => {
                 <a href="#about">About</a>
               </li>
               <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
-                <a href="#benifits">Benifits</a>
+                <a href="#benefits">Benefits</a>
               </li>
               <li className="my-2 text-white-500 hover:text-yellow-500 cursor-pointer transition-all">
                 <a href="#testimonial">Testimonial</a>
@@ -115,7 +115,7 @@ const Footer = () => {
               </li>
             </ul>
             <Image
-            src="/assets/GmapCode.webp"
+            src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/d1390355-dd79-479c-c934-79ed50111100/public"
             alt="automobile battery replacement"
             width={80}
             height={80}
