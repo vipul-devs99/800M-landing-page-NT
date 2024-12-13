@@ -152,7 +152,7 @@ const Header = () => {
                 className="flex justify-center items-center text-xs lg:text-sm py-1"
               >
                 <Call className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
-                <span className="block lg:hidden">Emergency? Call Now!</span>
+                <span className="block lg:hidden">Call Now!</span>
                 <span className="hidden lg:block">
                   Emergency? Click to call!
                 </span>
