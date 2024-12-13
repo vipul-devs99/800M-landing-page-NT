@@ -15,7 +15,7 @@ import AboutUS from "../components/AboutUS";
 export default function Home() {
   return (
     <>
-      <SeoHead title='800Mechanic Landing Page' />
+      <SeoHead title='800 BBattery Landing Page' />
       <Layout>
         <Hero />
         <AboutUS />

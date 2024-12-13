@@ -24,6 +24,7 @@ const Footer = () => {
               href="https://www.facebook.com/profile.php?id=61565118175123"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Footer icon"
               className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md"
             >
               <Facebook className="h-6 w-6" />
@@ -32,6 +33,7 @@ const Footer = () => {
               href="https://www.instagram.com/800b.battery/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram icon"
               className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md"
             >
               <Instagram className="h-6 w-6" />
@@ -126,6 +128,7 @@ const Footer = () => {
       <p className="text-gray-400 mt-4 max-w-screen-xl mx-auto w-full px-6 sm:px-8 lg:px-16">
           Copyright ©{new Date().getFullYear()} -by 800 BBattery. All rights reserved. Developed by <span className="text-yellow-500"><a
               href="https://www.mightywarner.ae/"
+               rel="noopener noreferrer"
               target="_blank">Mighty Warners </a></span>
         </p>
     </div>

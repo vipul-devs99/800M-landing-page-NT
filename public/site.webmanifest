@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "800Mechanic",
-  "short_name": "800Mechanic",
+  "name": "800 BBattery",
+  "short_name": "800 BBattery",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
-  "theme_color": "#F53838",
-  "description": "800Mechanic Best VPN For Privacy, Country and Cheapest.",
+  "theme_color": "#f2871c",
+  "description": "800 BBattery.",
   "icons": [
     {
       "src": "/favicon/android-icon-36x36.png",
