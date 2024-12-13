@@ -1,55 +1,42 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-
 // Default value for some meta data
 const defaultMeta = {
-  title: '800 BBattery',
+  title: '24x7 Car Battery Replacement | 800 BBattery',
   siteName: '800 BBattery',
   description:
-    'XYZ',
-  // change base url of your web (without '/' at the end)
-  url: '',
+    'Get 24x7 car battery replacement services from 800 BBattery. Quick, reliable, and professional assistance whenever you need it. Contact us today!',
+  url: 'https://www.800bbattery.com/best-car-battery-services-in-dubai',
   type: 'website',
   robots: 'follow, index',
-  // change with url of your image (recommended dimension = 1.91:1)
-  // used in twitter, facebook, etc. card when link copied in tweet/status 
-  image: '',
-  author: 'Lorem Ipsum'
+  image: 'https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/a8df3196-6c39-4799-0072-92dbd37c6700/public',
+  author: '800 BBattery'
 };
 
-/**
- * Next Head component populated with necessary SEO tags and title
- * props field used:
- * - title
- * - siteName
- * - description
- * - url
- * - type
- * - robots
- * - image
- * - date
- * - author
- * - templateTitle
- * all field are optional (default value defined on defaultMeta)
- * @example
- * <SeoHead title="Page's Title" />
- */
+// Add GTM script to the head section
+const gtmScript = `
+  (function(w,d,s,l,i){
+    w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MNXRNNP6');
+`;
+
 const SeoHead = (props) => {
   const router = useRouter();
-  const meta = {
-    ...defaultMeta,
-    ...props
-  };
+  const meta = { ...defaultMeta, ...props };
 
-  // Use siteName if there is templateTitle
-  // but show full title if there is none
-  meta.title = props.templateTitle
-    ? `${props.templateTitle} | ${meta.siteName}`
-    : meta.title;
+  meta.title = props.templateTitle ? `${props.templateTitle} | ${meta.siteName}` : meta.title;
 
   return (
     <Head>
+      {/* GTM script in the head */}
+      <script dangerouslySetInnerHTML={{ __html: gtmScript }} />
+      
       <title>{meta.title}</title>
       <meta name='robots' content={meta.robots} />
       <meta content={meta.description} name='description' />
@@ -63,23 +50,15 @@ const SeoHead = (props) => {
       <meta name='image' property='og:image' content={meta.image} />
       {/* Twitter */}
       <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:site' content='@F2aldi' />
+      <meta name='twitter:site' content='' />
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
       <meta name='twitter:image' content={meta.image} />
       {meta.date && (
         <>
           <meta property='article:published_time' content={meta.date} />
-          <meta
-            name='publish_date'
-            property='og:publish_date'
-            content={meta.date}
-          />
-          <meta
-            name='author'
-            property='article:author'
-            content={meta.author}
-          />
+          <meta name='publish_date' property='og:publish_date' content={meta.date} />
+          <meta name='author' property='article:author' content={meta.author} />
         </>
       )}
       {/* Favicons */}
@@ -87,55 +66,50 @@ const SeoHead = (props) => {
         <link key={linkProps.href} {...linkProps} />
       ))}
       {/* Windows 8 app icon */}
-      <meta name='msapplication-TileColor' content='#FFEB3B' />
+      <meta name='msapplication-TileColor' content='#f2871c' />
       {/* Accent color on supported browser */}
-      <meta name='theme-color' content='#FFEB3B' />
+      <meta name='theme-color' content='#f2871c' />
     </Head>
   );
 };
 
 // Favicons, other icons, and manifest definition
 const favicons = [
-
-
   {
     rel: 'apple-touch-icon',
     sizes: '114x114',
-    href: '/favicon/apple-touch-icon.png',
+    href: '../public/favicon/apple-touch-icon.png',
   },
-  
   {
     rel: 'apple-touch-icon',
     sizes: '180x180',
-    href: '/favicon/apple-icon-180x180.png',
+    href: '../public/assets/favicon/apple-touch-icon.png',
   },
- 
   {
     rel: 'icon',
-    href: '/favicon/favicon.ico',
+    href: '../public/assets/favicon/favicon.ico',
   },
   {
     rel: 'icon',
     type: 'image/png',
     sizes: '16x16',
-    href: '/favicon/favicon-16x16.png',
+    href: '../public/assets/favicon/favicon-16x16.png',
   },
   {
     rel: 'icon',
     type: 'image/png',
     sizes: '32x32',
-    href: '/favicon/favicon-32x32.png',
+    href: '../public/assets/favicon/favicon-32x32.png',
   },
-  
   {
     rel: 'icon',
     type: 'image/png',
     sizes: '192x192',
-    href: '/favicon/android-chrome-192x192.png',
+    href: '../public/assets/favicon/android-chrome-192x192.png',
   },
   {
     rel: 'manifest',
-    href: '/site.webmanifest',
+    href: '../public/site.webmanifest',
   },
 ];
 
