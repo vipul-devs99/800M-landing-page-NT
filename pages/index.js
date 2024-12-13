@@ -15,7 +15,7 @@ import AboutUS from "../components/AboutUS";
 export default function Home() {
   return (
     <>
-      <SeoHead title='800 BBattery Landing Page' />
+      <SeoHead title='24x7 Car Battery Replacement | 800 BBattery' />
       <Layout>
         <Hero />
         <AboutUS />
