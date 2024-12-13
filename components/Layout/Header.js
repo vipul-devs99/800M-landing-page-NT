@@ -244,7 +244,7 @@ const Header = () => {
     {/* Call Button */}
     <a
       href="tel:+971509344668"
-      className="group relative flex items-center justify-center bg-black-900 text-white   p-4 border-white-500/50 border"
+      className="group relative flex items-center justify-center bg-black-900 text-white   p-4 border-white-500/50 border-t "
     >
       <Call className="lg:h-6 lg:w-6 h-6 w-6 mr-2 text-white-500" /> <span className="text-white-500">Call Now!</span>
     </a> {/* WhatsApp Button */}
