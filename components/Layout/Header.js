@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import Call from "../../public/assets/Icon/phone.svg";
-
+import WhatsApp from "../../public/assets/Icon/whatsapp.svg";
 import Image from "next/image";
 
 const Header = () => {
@@ -164,73 +163,11 @@ const Header = () => {
       </header>
       {/* Mobile Navigation */}
 
-      {/* <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t bg-black-900">
-        <div className="bg-black-900 sm:px-3">
-          <ul className="flex w-full justify-between items-center text-black-500">
-            <LinkScroll
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("home");
-              }}
-              className={
-                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "home"
-                  ? "  border-yellow-500 text-yellow-500"
-                  : " border-transparent ")
-              }
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 12l9-9 9 9M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8m-8 4h-4m4 0h4"
-                />
-              </svg>
-              Home
-            </LinkScroll>
-          <LinkScroll
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("about");
-              }}
-              className={
-                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "about"
-                  ? "  border-yellow-500 text-yellow-500"
-                  : " border-transparent")
-              }
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              About
-            </LinkScroll>
+      {/* <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t ">
+        <div className=" sm:px-3">
+          <ul className="flex w-full justify-around items-center text-black-500">
+           
+         
             <LinkScroll
               activeClass="active"
               to="services"
@@ -300,6 +237,28 @@ const Header = () => {
           </ul>
         </div>
       </nav> */}
+      <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-0 sm:px-8 shadow-t ">
+  <div className="grid grid-cols-2 gap-0 py-0">
+   
+
+    {/* Call Button */}
+    <a
+      href="tel:+971509344668"
+      className="group relative flex items-center justify-center bg-black-900 text-white  shadow-md hover:shadow-lg transition-all transform hover:scale-110 p-4 border-white-500/50 border"
+    >
+      <Call className="lg:h-6 lg:w-6 h-6 w-6 mr-2 text-white-500" />
+    </a> {/* WhatsApp Button */}
+    <a
+      href="https://wa.me/+971509344668?text=Can I get more details about your service?"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative flex items-center justify-center bg-green-600 text-white  shadow-md hover:shadow-lg transition-all transform hover:scale-110 p-4 border-white-500/50 border"
+    >
+      <WhatsApp className="lg:h-6 lg:w-6 h-6 w-6 mr-2 text-white-500" />
+    </a>
+  </div>
+</nav>
+
       {/* End Mobile Navigation */}
     </>
   );

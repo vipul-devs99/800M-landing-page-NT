@@ -13,7 +13,7 @@ export default function TrustSection() {
           </div>
 
           {/* Stats grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-6">
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-full bg-yellow-500/10">
                 <Truck className="w-6 h-6 text-yellow-500" />

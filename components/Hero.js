@@ -18,13 +18,16 @@ const Hero = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
+    <div className="bg-white-500 lg:bg-[url('/assets/banner-background-1920x700.jpg')] lg:bg-cover lg:bg-center">
+
+    
     <div
-      className="max-w-screen-xl lg:mt-32 mt-20 lg:px-8 px-4 xl:px-16 mx-auto heroBanner"
+      className="max-w-screen-xl lg:pt-20 lg:pb-20 pb-20 mt-20 lg:px-8 px-4 xl:px-16 mx-auto "
       id="home"
     >
       <ScrollAnimationWrapper>
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-14"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-4"
           variants={scrollAnimation}
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1 mt-6 lg:mt-0">
@@ -122,7 +125,7 @@ const Hero = () => {
               </ButtonPrimary>
             </div>
           </div>
-          <div className="flex w-full">
+          <div className="flex w-full lg:hidden ">
             <motion.div
               className="h-full w-full rounded"
               variants={scrollAnimation}
@@ -147,6 +150,7 @@ const Hero = () => {
           style={{ filter: "blur(114px)" }}
         ></div>
       </div>
+    </div>
     </div>
   );
 };
