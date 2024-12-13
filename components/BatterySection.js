@@ -90,14 +90,14 @@ const BatterySection = () => {
             <Slider {...sliderSettings}>
               <div className="flex justify-center items-center">
                 <img
-                  src="./assets/800b/ac-delco.webp"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/a5783e87-5537-45ae-f95e-b965c14bc100/public"
                   className="lg:h-14 h-10  w-auto"
                   alt="AC Delco car battery replacement"
                 />
               </div>
               <div className="flex justify-center">
                 <img
-                  src="./assets/800b/amaron-battery.webp"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/e96e3c95-f02e-41b2-ca86-0fa065debc00/public"
                   className="lg:h-14 h-10  w-auto"
                   alt="Amaron auto battery replacement"
                 />
@@ -106,21 +106,21 @@ const BatterySection = () => {
              
               <div className="flex justify-center">
                 <img
-                  src="./assets/800b/bosch.webp"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/11caa283-465a-4cee-f51b-db33880d0900/public"
                   className="h-12 w-auto"
                   alt="Bosch automobile battery replacement"
                 />
               </div>
               <div className="flex justify-center">
                 <img
-                  src="./assets/800b/fiamm.webp"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/b316e92a-36fc-4f11-0564-776c5f324a00/public"
                   className="h-12 w-auto"
                   alt="fiamm auto battery service"
                 />
               </div>
               <div className="flex justify-center">
                 <img
-                  src="./assets/800b/Energizer.webp"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/90dbea1a-0e4c-4846-545c-43c9c871e000/public"
                   className="lg:h-14 h-10  w-auto"
                   alt="Energizer car battery change"
                 />
@@ -128,14 +128,14 @@ const BatterySection = () => {
               
               <div className="flex justify-center">
                 <img
-                  src="./assets/800b/varta.webp"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/fc75441e-a0c8-453b-4b1b-e95df3ac2d00/public"
                   className="h-12 w-auto"
                   alt="varta car battery services"
                 />
               </div>
               <div className="flex justify-center">
                 <img
-                  src="./assets/800b/excide-batteries.webp"
+                  src="https://imagedelivery.net/yg9mV_kJZn9RkpQKfOuKfA/d0839ccd-f84d-4b49-64a2-38ddcc534b00/public"
                   className="h-12 w-auto"
                   alt="excide auto battery service near me"
                 />
