@@ -18,7 +18,7 @@ const Hero = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <div className="bg-white-500 lg:bg-[url('../public/assets/banner-background-1920x700.webp')] lg:bg-cover lg:bg-center">
+    <div className="bg-white-500 lg:bg-heroBanner lg:bg-cover lg:bg-center">
 
     
     <div
