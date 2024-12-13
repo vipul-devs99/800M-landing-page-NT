@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "../misc/ButtonOutline.";
 import Call from "../../public/assets/Icon/phone.svg";
 import WhatsApp from "../../public/assets/Icon/whatsapp.svg";
 import Image from "next/image";
@@ -50,7 +49,7 @@ const Header = () => {
             >
               Home
             </LinkScroll>
-          
+
             <LinkScroll
               activeClass="active"
               to="about"
@@ -87,8 +86,6 @@ const Header = () => {
             >
               Benifits
             </LinkScroll>
-            
-            
 
             <LinkScroll
               activeClass="active"
@@ -146,18 +143,20 @@ const Header = () => {
             </LinkScroll>
           </ul>
           <div className="lg:col-start-10 lg:col-end-12 font-medium flex justify-end items-center">
-            <ButtonOutline>
+          <button className="font-medium tracking-wide py-2 px-2 sm:px-8 border border-white-500 text-white-500 bg-yellow-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-[#000] hover:text-white-500 transition-all hover:shadow-yellow ">
               <a
                 href="tel:80063242642"
                 className="flex justify-center items-center text-xs lg:text-sm py-1"
               >
-                <Call className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
-                <span className="block lg:hidden">Call Now!</span>
+                <Call className="lg:h-6 lg:w-6 h-4 w-4 lg:mr-2 mr-1 text-white-500 " />
+                <span className="block lg:hidden text-xs">
+                  Emergency? Call Now!
+                </span>
                 <span className="hidden lg:block">
                   Emergency? Click to call!
                 </span>
               </a>
-            </ButtonOutline>
+            </button>
           </div>
         </nav>
       </header>
@@ -238,27 +237,27 @@ const Header = () => {
         </div>
       </nav> */}
       <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-0 sm:px-8 shadow-t ">
-  <div className="grid grid-cols-2 gap-0 py-0">
-   
-
-    {/* Call Button */}
-    <a
-      href="tel:+971509344668"
-      className="group relative flex items-center justify-center bg-black-900 text-white   p-4 border-white-500/50 border-t "
-    >
-      <Call className="lg:h-6 lg:w-6 h-6 w-6 mr-2 text-white-500" /> <span className="text-white-500">Call Now!</span>
-    </a> {/* WhatsApp Button */}
-    <a
-      href="https://wa.me/+971509344668?text=Can I get more details about your service?"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group relative flex items-center justify-center bg-green-600 text-white   hover:shadow-lg  p-4 border-white-500/50 border"
-    >
-      <WhatsApp className="lg:h-6 lg:w-6 h-6 w-6 mr-2 text-white-500" />
-      <span className="text-white-500">WhatsApp!</span>
-    </a>
-  </div>
-</nav>
+        <div className="grid grid-cols-2 gap-0 py-0">
+          {/* Call Button */}
+          <a
+            href="tel:+971509344668"
+            className="group relative flex items-center justify-center bg-black-900 text-white   p-4 border-white-500/50 border-t "
+          >
+            <Call className="lg:h-6 lg:w-6 h-6 w-6 mr-2 text-white-500" />{" "}
+            <span className="text-white-500">Call Now!</span>
+          </a>{" "}
+          {/* WhatsApp Button */}
+          <a
+            href="https://wa.me/+971509344668?text=Can I get more details about your service?"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative flex items-center justify-center bg-green-600 text-white   hover:shadow-lg  p-4 border-white-500/50 border"
+          >
+            <WhatsApp className="lg:h-6 lg:w-6 h-6 w-6 mr-2 text-white-500" />
+            <span className="text-white-500">WhatsApp!</span>
+          </a>
+        </div>
+      </nav>
 
       {/* End Mobile Navigation */}
     </>

@@ -39,7 +39,7 @@ const Hero = () => {
             Anytime, Anywhere.
             </h2>
             <div>
-  <p className="text-black-900 mt-4 mb-6 font-semibold bg-yellow-500/20 p-2 border-2 border-dashed border-yellow-500 animate-text">
+  <p className="text-blue-500 mt-4 mb-6 font-semibold bg-yellow-500/20 p-2 border-2 border-dashed border-yellow-500 animate-text">
   Get 15% winter offer for battery replacement 
   </p>
  
