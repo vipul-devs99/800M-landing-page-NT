@@ -244,17 +244,18 @@ const Header = () => {
     {/* Call Button */}
     <a
       href="tel:+971509344668"
-      className="group relative flex items-center justify-center bg-black-900 text-white  shadow-md hover:shadow-lg transition-all transform hover:scale-110 p-4 border-white-500/50 border"
+      className="group relative flex items-center justify-center bg-black-900 text-white   p-4 border-white-500/50 border"
     >
-      <Call className="lg:h-6 lg:w-6 h-6 w-6 mr-2 text-white-500" />
+      <Call className="lg:h-6 lg:w-6 h-6 w-6 mr-2 text-white-500" /> <span className="text-white-500">Call Now!</span>
     </a> {/* WhatsApp Button */}
     <a
       href="https://wa.me/+971509344668?text=Can I get more details about your service?"
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative flex items-center justify-center bg-green-600 text-white  shadow-md hover:shadow-lg transition-all transform hover:scale-110 p-4 border-white-500/50 border"
+      className="group relative flex items-center justify-center bg-green-600 text-white   hover:shadow-lg  p-4 border-white-500/50 border"
     >
       <WhatsApp className="lg:h-6 lg:w-6 h-6 w-6 mr-2 text-white-500" />
+      <span className="text-white-500">WhatsApp!</span>
     </a>
   </div>
 </nav>

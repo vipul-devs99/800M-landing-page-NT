@@ -1,11 +1,11 @@
 import React, { useMemo } from "react";
 import Image from "next/image";
-import ButtonPrimary from "./misc/ButtonPrimary";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-import Call from "../public/assets/Icon/phone.svg";
-import WhatsApp from "../public/assets/Icon/whatsapp.svg";
+
+import CallButton from "./misc/CallButton";
+import WhatsappButton from "./misc/WhatsappButton";
 
 const features = [
   "No Hidden Fees – Delivery and Service Are Free",
@@ -18,7 +18,7 @@ const Hero = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <div className="bg-white-500 lg:bg-[url('/assets/banner-background-1920x700.jpg')] lg:bg-cover lg:bg-center">
+    <div className="bg-white-500 lg:bg-[url('../public/assets/banner-background-1920x700.jpg')] lg:bg-cover lg:bg-center">
 
     
     <div
@@ -30,8 +30,8 @@ const Hero = () => {
           className="grid grid-cols-1 lg:grid-cols-2 gap-4"
           variants={scrollAnimation}
         >
-          <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1 mt-6 lg:mt-0">
-            <h1 className="text-2xl lg:text-3xl xl:text-4xl font-medium text-black-600 leading-normal">
+          <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1 mt-2 lg:mt-0">
+            <h1 className="text-3xl lg:text-3xl xl:text-4xl font-medium text-black-600 ">
               Get Your Battery Replaced in 25 Minutes Fast.
             </h1>
             <h2 className="text-yellow-500 font-semibold text-xl  uppercase mt-4">
@@ -99,30 +99,8 @@ const Hero = () => {
             </ul>
             <div className="flex justify-center items-center gap-2">
               
-              <button
-                className={
-                  "py-3 lg:py-3 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-black-600 hover:shadow-yellow-md transition-all outline-none "
-                }
-              >
-                <a
-                  href="tel:+971509344668"
-                  className="flex justify-center items-center text-xs lg:text-sm py-1 "
-                >
-                  <Call className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
-                  <span className="">Call Now!</span>
-                </a>
-              </button>
-              <ButtonPrimary>
-                <a
-                  href="https://wa.me/+971509344668?text=Can I get more details about your service?"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex justify-center items-center text-xs lg:text-sm py-1"
-                >
-                  <WhatsApp className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
-                  <span className="">WhatsApp!</span>
-                </a>
-              </ButtonPrimary>
+              <CallButton name="Call Now!"/>
+              <WhatsappButton name="WhatsApp!"/>
             </div>
           </div>
           <div className="flex w-full lg:hidden ">

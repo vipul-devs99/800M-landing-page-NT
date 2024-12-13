@@ -3,9 +3,8 @@ import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-import ButtonPrimary from "./misc/ButtonPrimary";
-import Call from "../public/assets/Icon/phone.svg";
-import WhatsApp from "../public/assets/Icon/whatsapp.svg";
+import CallButton from "./misc/CallButton";
+import WhatsappButton from "./misc/WhatsappButton";
 
 const features = [
   "24/7 Emergency Service",
@@ -75,30 +74,8 @@ const Feature = () => {
             </ul>
             <div className="flex justify-start items-center gap-2">
               
-              <button
-                className={
-                  "py-3 lg:py-3 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-black-600 hover:shadow-yellow-md transition-all outline-none "
-                }
-              >
-                <a
-                  href="tel:+971509344668"
-                  className="flex justify-center items-center text-xs lg:text-sm py-1 "
-                >
-                  <Call className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
-                  <span className="">Call Now!</span>
-                </a>
-              </button>
-              <ButtonPrimary>
-                <a
-                  href="https://wa.me/+971509344668?text=Can I get more details about your service?"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex justify-center items-center text-xs lg:text-sm py-1"
-                >
-                  <WhatsApp className="lg:h-6 lg:w-6 h-4 w-4 mr-2 text-white-500 " />
-                  <span className="">Talk to Expert!</span>
-                </a>
-              </ButtonPrimary>
+            <CallButton name="Call Now!"/>
+            <WhatsappButton name="Talk to Expert!"/>
             </div>
           </motion.div>
         </ScrollAnimationWrapper>

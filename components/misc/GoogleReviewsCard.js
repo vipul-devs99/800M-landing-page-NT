@@ -12,15 +12,15 @@ const GoogleReviewBadge = () => {
         />
         {/* <span className="text-blue-500 font-semibold text-sm ml-1">Google</span> */}
       </div>
-      <div className="flex items-center flex-row pt-2">
+      <div className="flex items-center flex-row pt-1 px-2 mb-2">
         <span className="text-yellow-500 text-lg mr-1">★</span>
         <span className="text-black-900 font-bold text-sm mt-1">4.9</span>
       </div>
 
       {/* Reviews Count */}
-      <p className="text-gray-600 text-xs text-center px-2 mb-2">
+      {/* <p className="text-gray-600 text-xs text-center px-2 mb-2">
         Based on<br/> <span className="font-bold">500+</span> reviews
-      </p>
+      </p> */}
 
       
     </div>
